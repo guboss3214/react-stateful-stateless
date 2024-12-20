@@ -1,8 +1,13 @@
-# React + Vite
+# Опис:
+Цей проект містить два компоненти, один із яких є stateless (не має внутрішнього стану), а інший — stateful (має внутрішній стан).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. StatelessGreeting — це компонент, який приймає пропси для імені, віку та навичок користувача та відображає їх на екрані. Компонент не має внутрішнього стану і просто рендерить отримані дані.
 
-Currently, two official plugins are available:
+2. StatefulCounter — компонент, який використовує стан для збереження значення лічильника. Користувач може змінювати значення лічильника за допомогою кнопки.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Основні складнощі:
+* Робота з пропсами: Потрібно було правильно передати пропси між компонентами та забезпечити їх коректне відображення.
+
+* Стан компонентів: Створення компонента з внутрішнім станом було трохи складним, адже потрібно було правильно використовувати хук useState для зміни значення лічильника.
+
+* Розподіл на Stateless та Stateful компоненти: Важливо було правильно зрозуміти різницю між stateless та stateful компонентами та застосувати відповідну логіку для кожного з них.
